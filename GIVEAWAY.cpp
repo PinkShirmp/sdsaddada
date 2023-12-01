@@ -144,7 +144,9 @@ int main(){
   }
   cin>>q;
   int t,a,b,c;
-  sort(blocks.begin(),blocks.end());
+  for(int i=0;i*sz<n;i++){
+    sort(blocks[i].begin(),blocks[i].end());
+  }
   //debug(blocks);
   while(q--){
     cin>>t;

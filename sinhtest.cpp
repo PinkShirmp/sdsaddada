@@ -25,16 +25,16 @@ int main()
         inp<<n;
         for(int i=1;i<=n;i++){
           int ranx=Rand(1,1e9);
-          inp<<ranx;
+          inp<<ranx<<"\n";
         }
         int q=Rand(1,5);
         inp<<q;
         while(q--){
           int ti=Rand(0,1);
           if(!ti){
-            inp<<ti<<Rand(1,n/2)<<(n/2+1,n)<<Rand(1,1e9);
+            inp<<ti<<" "<<Rand(1,n/2)<<" "<<(n/2+1,n)<<" "<<Rand(1,1e9)<<"\n";
           }else{
-            inp<<Rand(1,n)<<Rand(1,1e9);
+            inp<<Rand(1,n)<<" "<<Rand(1,1e9)<<"\n";
           }
         }
 
